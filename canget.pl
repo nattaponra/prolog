@@ -3,7 +3,7 @@
   ตำแหน่งที่ลิงอยู่: don't care
   ลิงยืนบนพื้นหรือกล่อง: don't care
   ตำแหน่งที่กล่องตั้งอยู่: don't care
-  ลิงมีกล้วยหรือไม่:has
+  ลิงมีกล้วยหรือไม่: has
  */
 canget(state(_,_,_,has)).
 
@@ -17,10 +17,10 @@ move(state(P1,onfloor,B,H), walk(P1,P2),  state(P2,onfloor,B,H)).
 
 /** รันคำสั่ง catget() 
   ด้วยสถานะเริ่มต้น (initial state)
-  ตำแหน่งที่ลิงอยู่:atdoor
-  ลิงยืนบนพื้นหรือกล่อง:onfloor
-  ตำแหน่งที่กล่องตั้งอยู่:atwindow
-  ลิงมีกล้วยหรือไม่:hasnot
+  ตำแหน่งที่ลิงอยู่: atdoor
+  ลิงยืนบนพื้นหรือกล่อง: onfloor
+  ตำแหน่งที่กล่องตั้งอยู่: atwindow
+  ลิงมีกล้วยหรือไม่: hasnot
  */
 
 run :- canget(state(atdoor,onfloor,atwindow,hasnot)).
